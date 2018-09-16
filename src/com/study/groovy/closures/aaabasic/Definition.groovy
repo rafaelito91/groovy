@@ -2,6 +2,10 @@ package com.study.groovy.closures.aaabasic
 
 class Definition {
 
+    static def sayHello = {name ->
+        println "Hello, $name"
+    }
+
     // if it was a script, no static was needed.
     // it is so right know due to main method having
     // static scope
@@ -10,13 +14,15 @@ class Definition {
     }
 
     static void main(String[] args) {
+        sayHello("Rafael")
+
         timesTen(10, { println it })
 
         // Groovy tells me that every time a closure is
         // the last argument in a method, we can remove
         // the method braces and write method as below:
-        timesTen(2) {
-            println it
+        timesTen(2) { // ie, this method had two
+            println it       // arguments: a number and a clojure
         }
 
         // same reason we can write each method like:
