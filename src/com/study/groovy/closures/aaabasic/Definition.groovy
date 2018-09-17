@@ -22,7 +22,7 @@ class Definition {
         // the last argument in a method, we can remove
         // the method braces and write method as below:
         timesTen(2) { // ie, this method had two
-            println it       // arguments: a number and a clojure
+            println it       // arguments: a number and a closure
         }
 
         // same reason we can write each method like:

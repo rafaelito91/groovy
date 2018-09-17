@@ -1,7 +1,7 @@
 package com.study.groovy.closures.curry
 
 class Curry {
-    // Curry allows you to created a new clojure based on
+    // Curry allows you to created a new closure based on
     // an existing one
     static void main(String[] args) {
         def log = { String type, Date createdOn, String msg ->

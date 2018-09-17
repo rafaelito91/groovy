@@ -17,7 +17,7 @@ class Arguments {
             println it
         }
 
-        // also, if you want to make sure a clojure doesn't
+        // also, if you want to make sure a closure doesn't
         // receive any arguments, do as:
         noArguments() // if you define a argument, an exception will be thrown
 
